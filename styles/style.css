@@ -80,7 +80,8 @@ body {
 
 .nav-links {
   gap: 2.5em;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 0;
 }
 
 .nav-item {
@@ -125,10 +126,14 @@ body {
 /* making header responsive */
 
 @media screen and (max-width: 576px) {
-  .navbar,
-  .nav-links {
+  .navbar {
     flex-direction: column;
     width: auto;
+  }
+
+  .nav-links {
+    margin: 0 auto;
+    gap: 2rem;
   }
 
   .banner {
